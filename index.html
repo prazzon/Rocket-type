@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script defer type="module" src="./script/controller.js"></script>
+    <title>Typing Addict</title>
+</head>
+
+<body>
+    <header class="navigation">
+        <img src="/images/logo.png" alt="logo" class="logo">
+        <ul class="nav-links">
+            <li class="nav-link">
+                <svg class="nav-icon">
+                    <use xlink:href="/images/sprite.svg#icon-leaderboard"></use>
+                </svg>
+                Stats
+            </li>
+            <li class="nav-link">
+                <svg class="nav-icon">
+                    <use xlink:href="/images/sprite.svg#icon-customize"></use>
+                </svg>
+                Customize
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="dashboard">
+            <div class="config-container">
+                <!-- <div class="config-container hidden"> -->
+                <div class="counter"></div>
+                <div class="divider"></div>
+                <div class="configs">
+                    <div class="mode-container">
+                        <div class="mode-button active" data-mode="words">
+                            <svg class="mode-icon">
+                                <use xlink:href="/images/sprite.svg#icon-word-2"></use>
+                            </svg>
+                            <div class="mode-text">words</div>
+                        </div>
+                        <div class="mode-button" data-mode="time">
+                            <svg class="mode-icon">
+                                <use xlink:href="/images/sprite.svg#icon-time"></use>
+                            </svg>
+                            <div class="mode-text">time</div>
+                        </div>
+                        <div class="mode-button" data-mode="quote">
+                            <svg class="mode-icon">
+                                <use xlink:href="/images/sprite.svg#icon-quote"></use>
+                            </svg>
+                            <div class="mode-text">quote</div>
+                        </div>
+                    </div>
+                    <div class="type-container">
+                        <div class="type words-type active">
+                            <!-- <div class="type-button active" data-type="2">2</div> -->
+                            <div class="type-button active" data-type="10">10</div>
+                            <div class="type-button" data-type="25">25</div>
+                            <div class="type-button" data-type="50">50</div>
+                            <div class="type-button" data-type="100">100</div>
+                        </div>
+                        <div class="type time-type">
+                            <div class="type-button active" data-type="15">15s</div>
+                            <div class="type-button" data-type="30">30s</div>
+                            <div class="type-button" data-type="60">60s</div>
+                            <div class="type-button" data-type="120">120s</div>
+                        </div>
+                        <div class="type quote-type">
+                            <div class="type-button" data-type="all">all</div>
+                            <div class="type-button active" data-type="short">short</div>
+                            <div class="type-button" data-type="medium">medium</div>
+                            <div class="type-button" data-type="long">long</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar hidden">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <div class="result-container hidden">
+                <!-- <div class="result-container"> -->
+                <div class="wpm result-item">
+                    <span id="wpm">60</span>
+                    <span class="result-label">wpm</span>
+                </div>
+                <div class="time result-item">
+                    <span id="time">60</span>
+                    <span class="result-label">seconds</span>
+                </div>
+                <div class="accuracy result-item">
+                    <span id="accuracy">95%</span>
+                    <span class="result-label">accuracy</span>
+                </div>
+            </div>
+        </div>
+        <input class="words-input" id="words-input" spellcheck="false"></input>
+        <div class="words-container">
+            <div class="caret animate"></div>
+            <div class="words-wrapper"></div>
+            <!-- <div class="words-wrapper hidden"></div> -->
+            <div class="result-wrapper hidden">
+                <!-- <div class="result-wrapper"> -->
+                <div class="character-details-container">
+                    <div class="donut-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="donut-details">
+                        <div class="donut-detail">
+                            <div class="donut-detail_title">Correct</div>
+                            <div class="donut-detail_value detail-correct">25</div>
+                        </div>
+                        <div class="donut-detail">
+                            <div class="donut-detail_title">Errors</div>
+                            <div class="donut-detail_value detail-errors">5</div>
+                        </div>
+                        <div class="donut-detail">
+                            <div class="donut-detail_title">Extra</div>
+                            <div class="donut-detail_value detail-extra">2</div>
+                        </div>
+                        <div class="donut-detail">
+                            <div class="donut-detail_title">Missed</div>
+                            <div class="donut-detail_value detail-missed">1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="test-config-container">
+                        <div class="test-config">
+                            <div class="test-config_title">test</div>
+                            <div class="test-config_value test-value">words</div>
+                        </div>
+                        <div class="test-config">
+                            <div class="test-config_title">type</div>
+                            <div class="test-config_value type-value">10</div>
+                        </div>
+                        <div class="test-config">
+                            <div class="test-config_title">raw</div>
+                            <div class="test-config_value raw-value">60</div>
+                        </div>
+                        <div class="test-config">
+                            <div class="test-config_title">characters</div>
+                            <div class="test-config_value character-value">45</div>
+                        </div>
+                    </div>
+                    <div class="history-wrapper">
+                        <div class="history-options-container">
+                            <div class="history-option active" data-option="recent">Recent</div>
+                            <div class="history-option" data-option="best">Best</div>
+                            <div class="history-option" data-option="inputHistory">Input history</div>
+                        </div>
+                        <div class="history-container">
+                            <div class="history-detail">
+                                <div class="history-item">
+                                    <div class="history-item_title">wpm</div>
+                                    <div class="history-item_value">82</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item_title">accuracy</div>
+                                    <div class="history-item_value">100%</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item_title">words</div>
+                                    <div class="history-item_value">10</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-time">4m ago</div>
+                                </div>
+                            </div>
+
+                            <div class="history-detail">
+                                <div class="history-item">
+                                    <div class="history-item_title">wpm</div>
+                                    <div class="history-item_value">52</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item_title">accuracy</div>
+                                    <div class="history-item_value">80%</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item_title">words</div>
+                                    <div class="history-item_value">10</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-time">9m ago</div>
+                                </div>
+                            </div>
+
+                            <div class="history-detail">
+                                <div class="history-item">
+                                    <div class="history-item_title">wpm</div>
+                                    <div class="history-item_value">91</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item_title">accuracy</div>
+                                    <div class="history-item_value">98%</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item_title">time</div>
+                                    <div class="history-item_value">15</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-time">1h ago</div>
+                                </div>
+                            </div>
+
+                            <div class="history-detail">
+                                <div class="history-item">
+                                    <div class="history-item_title">wpm</div>
+                                    <div class="history-item_value">62</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item_title">accuracy</div>
+                                    <div class="history-item_value">80%</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item_title">words</div>
+                                    <div class="history-item_value">10</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-time">4d ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restart-container">
+            <button class="restart restart-btn" data-option="restart">
+                <svg class="restart-icon">
+                    <use xlink:href="/images/sprite.svg#icon-restart"></use>
+                </svg>
+                Restart
+            </button>
+            <button class="next-test restart-btn" data-option="next">
+                <svg class="restart-icon">
+                    <use xlink:href="/images/sprite.svg#icon-next"></use>
+                </svg>
+                Next Test
+            </button>
+        </div>
+    </main>
+    <div class="footer"></div>
+</body>
+
+</html>

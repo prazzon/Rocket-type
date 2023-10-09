@@ -1,0 +1,788 @@
+{
+    "quotes": [
+        {
+            "text": "The only way to do great work is to love what you do.",
+            "author": "Steve Jobs",
+            "id": 1,
+            "char": 41,
+            "length": "short"
+        },
+        {
+            "text": "In the middle of every difficulty lies opportunity.",
+            "author": "Albert Einstein",
+            "id": 2,
+            "char": 44,
+            "length": "short"
+        },
+        {
+            "text": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+            "author": "Albert Schweitzer",
+            "id": 3,
+            "char": 102,
+            "length": "long"
+        },
+        {
+            "text": "The best way to predict the future is to create it.",
+            "author": "Peter Drucker",
+            "id": 4,
+            "char": 41,
+            "length": "short"
+        },
+        {
+            "text": "Believe you can and you're halfway there.",
+            "author": "Theodore Roosevelt",
+            "id": 5,
+            "char": 35,
+            "length": "short"
+        },
+        {
+            "text": "Don't watch the clock; do what it does. Keep going.",
+            "author": "Sam Levenson",
+            "id": 6,
+            "char": 42,
+            "length": "short"
+        },
+        {
+            "text": "Your time is limited, don't waste it living someone else's life.",
+            "author": "Steve Jobs",
+            "id": 7,
+            "char": 54,
+            "length": "short"
+        },
+        {
+            "text": "I find that the harder I work, the more luck I seem to have.",
+            "author": "Thomas Jefferson",
+            "id": 8,
+            "char": 47,
+            "length": "short"
+        },
+        {
+            "text": "Success is not in what you have, but who you are.",
+            "author": "Bo Bennett",
+            "id": 9,
+            "char": 39,
+            "length": "short"
+        },
+        {
+            "text": "The only place where success comes before work is in the dictionary.",
+            "author": "Vidal Sassoon",
+            "id": 10,
+            "char": 57,
+            "length": "medium"
+        },
+        {
+            "text": "The biggest risk is not taking any risk. In a world that's changing quickly, the only strategy that is guaranteed to fail is not taking risks.",
+            "author": "Mark Zuckerberg",
+            "id": 11,
+            "char": 117,
+            "length": "long"
+        },
+        {
+            "text": "Choose a job you love, and you will never have to work a day in your life.",
+            "author": "Confucius",
+            "id": 12,
+            "char": 58,
+            "length": "medium"
+        },
+        {
+            "text": "The future belongs to those who believe in the beauty of their dreams.",
+            "author": "Eleanor Roosevelt",
+            "id": 13,
+            "char": 58,
+            "length": "medium"
+        },
+        {
+            "text": "You miss 100% of the shots you don't take.",
+            "author": "Wayne Gretzky",
+            "id": 14,
+            "char": 34,
+            "length": "short"
+        },
+        {
+            "text": "It does not matter how slowly you go as long as you do not stop.",
+            "author": "Confucius",
+            "id": 15,
+            "char": 50,
+            "length": "short"
+        },
+        {
+            "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+            "author": "Franklin D. Roosevelt",
+            "id": 16,
+            "char": 61,
+            "length": "medium"
+        },
+        {
+            "text": "The way to get started is to quit talking and begin doing.",
+            "author": "Walt Disney",
+            "id": 17,
+            "char": 47,
+            "length": "short"
+        },
+        {
+            "text": "Life is 10% what happens to us and 90% how we react to it.",
+            "author": "Charles R. Swindoll",
+            "id": 18,
+            "char": 45,
+            "length": "short"
+        },
+        {
+            "text": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.",
+            "author": "Steve Jobs",
+            "id": 19,
+            "char": 149,
+            "length": "long"
+        },
+        {
+            "text": "The best revenge is massive success.",
+            "author": "Frank Sinatra",
+            "id": 20,
+            "char": 31,
+            "length": "short"
+        },
+        {
+            "text": "I have not failed. I've just found 10,000 ways that won't work.",
+            "author": "Thomas Edison",
+            "id": 21,
+            "char": 52,
+            "length": "short"
+        },
+        {
+            "text": "The only person you are destined to become is the person you decide to be.",
+            "author": "Ralph Waldo Emerson",
+            "id": 22,
+            "char": 60,
+            "length": "medium"
+        },
+        {
+            "text": "Opportunities don't happen. You create them.",
+            "author": "Chris Grosser",
+            "id": 23,
+            "char": 39,
+            "length": "short"
+        },
+        {
+            "text": "The best way to predict your future is to create it.",
+            "author": "Peter Drucker",
+            "id": 24,
+            "char": 42,
+            "length": "short"
+        },
+        {
+            "text": "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.",
+            "author": "Jordan Belfort",
+            "id": 25,
+            "char": 98,
+            "length": "long"
+        },
+        {
+            "text": "The secret of getting ahead is getting started.",
+            "author": "Mark Twain",
+            "id": 26,
+            "char": 40,
+            "length": "short"
+        },
+        {
+            "text": "Don't be afraid to give up the good to go for the great.",
+            "author": "John D. Rockefeller",
+            "id": 27,
+            "char": 44,
+            "length": "short"
+        },
+        {
+            "text": "If you want to achieve greatness stop asking for permission.",
+            "author": "Anonymous",
+            "id": 28,
+            "char": 51,
+            "length": "short"
+        },
+        {
+            "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+            "author": "Winston Churchill",
+            "id": 29,
+            "char": 59,
+            "length": "medium"
+        },
+        {
+            "text": "The harder I work, the luckier I get.",
+            "author": "Gary Player",
+            "id": 30,
+            "char": 30,
+            "length": "short"
+        },
+        {
+            "text": "Success is not the absence of failure; it's the persistence through failure.",
+            "author": "Aisha Tyler",
+            "id": 31,
+            "char": 65,
+            "length": "medium"
+        },
+        {
+            "text": "The journey of a thousand miles begins with one step.",
+            "author": "Lao Tzu",
+            "id": 32,
+            "char": 44,
+            "length": "short"
+        },
+        {
+            "text": "Believe you can, and you're halfway there.",
+            "author": "Theodore Roosevelt",
+            "id": 33,
+            "char": 36,
+            "length": "short"
+        },
+        {
+            "text": "If you tell the truth, you don't have to remember anything.",
+            "author": "Mark Twain",
+            "id": 34,
+            "char": 49,
+            "length": "short"
+        },
+        {
+            "text": "True terror is to wake up one morning and discover that your high school class is running the country.",
+            "author": "Kurt Vonnegut",
+            "id": 35,
+            "char": 84,
+            "length": "long"
+        },
+        {
+            "text": "Always forgive your enemies; nothing annoys them so much.",
+            "author": "Oscar Wilde",
+            "id": 36,
+            "char": 49,
+            "length": "short"
+        },
+        {
+            "text": "All that we are is the result of what we have thought.",
+            "author": "Buddha",
+            "id": 37,
+            "char": 43,
+            "length": "short"
+        },
+        {
+            "text": "If you judge people, you have no time to love them.",
+            "author": "Mother Teresa",
+            "id": 38,
+            "char": 41,
+            "length": "short"
+        },
+        {
+            "text": "The most courageous act is still to think for yourself. Aloud.",
+            "author": "Coco Chanel",
+            "id": 39,
+            "char": 52,
+            "length": "short"
+        },
+        {
+            "text": "The greatest wealth is to live content with little.",
+            "author": "Plato",
+            "id": 40,
+            "char": 43,
+            "length": "short"
+        },
+        {
+            "text": "The future belongs to those who prepare for it today.",
+            "author": "Malcolm X",
+            "id": 41,
+            "char": 44,
+            "length": "short"
+        },
+        {
+            "text": "Be yourself; everyone else is already taken.",
+            "author": "Oscar Wilde",
+            "id": 42,
+            "char": 38,
+            "length": "short"
+        },
+        {
+            "text": "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
+            "author": "Marilyn Monroe",
+            "id": 43,
+            "char": 162,
+            "length": "long"
+        },
+        {
+            "text": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+            "author": "Albert Einstein",
+            "id": 44,
+            "char": 80,
+            "length": "long"
+        },
+        {
+            "text": "So many books, so little time.",
+            "author": "Frank Zappa",
+            "id": 45,
+            "char": 25,
+            "length": "short"
+        },
+        {
+            "text": "A room without books is like a body without a soul.",
+            "author": "Marcus Tullius Cicero",
+            "id": 46,
+            "char": 41,
+            "length": "short"
+        },
+        {
+            "text": "Don't walk behind me; I may not lead. Don't walk in front of me; I may not follow. Just walk beside me and be my friend.",
+            "author": "Albert Camus",
+            "id": 47,
+            "char": 95,
+            "length": "long"
+        },
+        {
+            "text": "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
+            "author": "J.K. Rowling",
+            "id": 48,
+            "char": 82,
+            "length": "long"
+        },
+        {
+            "text": "I have no special talent. I am only passionately curious.",
+            "author": "Albert Einstein",
+            "id": 49,
+            "char": 48,
+            "length": "short"
+        },
+        {
+            "text": "It does not matter how slowly you go so long as you do not stop.",
+            "author": "Confucius",
+            "id": 50,
+            "char": 50,
+            "length": "short"
+        },
+        {
+            "text": "Early to bed and early to rise makes a man healthy, wealthy, and wise.",
+            "author": "Benjamin Franklin",
+            "id": 52,
+            "char": 57,
+            "length": "medium"
+        },
+        {
+            "text": "Family is the most important thing in the world.",
+            "author": "Diana, Princess of Wales",
+            "id": 53,
+            "char": 40,
+            "length": "short"
+        },
+        {
+            "text": "All I was doing was trying to get home from work.",
+            "author": "Rosa Parks",
+            "id": 54,
+            "char": 39,
+            "length": "short"
+        },
+        {
+            "text": "It is not in the stars to hold our destiny but in ourselves.",
+            "author": "William Shakespeare",
+            "id": 55,
+            "char": 48,
+            "length": "short"
+        },
+        {
+            "text": "Never let the fear of striking out keep you.",
+            "author": "Babe Ruth",
+            "id": 56,
+            "char": 36,
+            "length": "short"
+        },
+        {
+            "text": "Don't judge each day by the harvest you reap but by the seeds that you plant.",
+            "author": "Robert Louis Stevenson",
+            "id": 57,
+            "char": 62,
+            "length": "medium"
+        },
+        {
+            "text": "The most difficult thing is the decision to act, the rest is merely tenacity.",
+            "author": "Amelia Earhart",
+            "id": 58,
+            "char": 64,
+            "length": "medium"
+        },
+        {
+            "text": "Life is 10% what happens to you and 90% how you react to it.",
+            "author": "Charles R. Swindoll",
+            "id": 59,
+            "char": 47,
+            "length": "short"
+        },
+        {
+            "text": "Start where you are. Use what you have. Do what you can.",
+            "author": "Arthur Ashe",
+            "id": 60,
+            "char": 45,
+            "length": "short"
+        },
+        {
+            "text": "Sometimes the road less traveled is less traveled for a reason.",
+            "author": "Jerry Seinfeld",
+            "id": 61,
+            "char": 53,
+            "length": "short"
+        },
+        {
+            "text": "My life has no purpose, no direction, no aim, no meaning, and yet I'm happy.",
+            "author": "Charles Schulz",
+            "id": 62,
+            "char": 62,
+            "length": "medium"
+        },
+        {
+            "text": "It takes considerable knowledge just to realize the extent of your own ignorance.",
+            "author": "Thomas Sowell",
+            "id": 63,
+            "char": 69,
+            "length": "medium"
+        },
+        {
+            "text": "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",
+            "author": "Neil Gaiman",
+            "id": 64,
+            "char": 106,
+            "length": "long"
+        },
+        {
+            "text": "Everything you can imagine is real.",
+            "author": "Pablo Picasso",
+            "id": 65,
+            "char": 30,
+            "length": "short"
+        },
+        {
+            "text": "Wisely, and slow. They stumble that run fast.",
+            "author": "William Shakespeare",
+            "id": 66,
+            "char": 38,
+            "length": "short"
+        },
+        {
+            "text": "Keep calm and carry on.",
+            "author": "Winston Churchill",
+            "id": 67,
+            "char": 19,
+            "length": "short"
+        },
+        {
+            "text": "That's one small step for a man, one giant leap for mankind.",
+            "author": "Neil Armstrong",
+            "id": 68,
+            "char": 49,
+            "length": "short"
+        },
+        {
+            "text": "I came, I saw, I conquered.",
+            "author": "Julius Caesar",
+            "id": 69,
+            "char": 22,
+            "length": "short"
+        },
+        {
+            "text": "I think, therefore I am.",
+            "author": "René Descartes",
+            "id": 70,
+            "char": 20,
+            "length": "short"
+        },
+        {
+            "text": "It's not whether you get knocked down, it's whether you get up.",
+            "author": "Vince Lombardi",
+            "id": 71,
+            "char": 52,
+            "length": "short"
+        },
+        {
+            "text": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+            "author": "Henry David Thoreau",
+            "id": 72,
+            "char": 67,
+            "length": "medium"
+        },
+        {
+            "text": "You miss 100 percent of the shots you never take.",
+            "author": "Wayne Gretzky",
+            "id": 73,
+            "char": 40,
+            "length": "short"
+        },
+        {
+            "text": "Nonviolence is a weapon of the strong.",
+            "author": "Mahatma Gandhi",
+            "id": 74,
+            "char": 32,
+            "length": "short"
+        },
+        {
+            "text": "Peace begins with a smile.",
+            "author": "Mother Teresa",
+            "id": 75,
+            "char": 22,
+            "length": "short"
+        },
+        {
+            "text": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.",
+            "author": "Mark Twain",
+            "id": 76,
+            "char": 72,
+            "length": "medium"
+        },
+        {
+            "text": "To be, or not to be, that is the question.",
+            "author": "William Shakespeare",
+            "id": 77,
+            "char": 33,
+            "length": "short"
+        },
+        {
+            "text": "Ask not what your country can do for you, but what you can do for your country.",
+            "author": "John F. Kennedy",
+            "id": 78,
+            "char": 63,
+            "length": "medium"
+        },
+        {
+            "text": "You've gotta dance like there's nobody watching, love like you'll never be hurt, sing like there's nobody listening, and live like it's heaven on earth.",
+            "author": "William W. Purkey",
+            "id": 79,
+            "char": 128,
+            "length": "long"
+        },
+        {
+            "text": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+            "author": "Maya Angelou",
+            "id": 80,
+            "char": 113,
+            "length": "long"
+        },
+        {
+            "text": "The only thing we have to fear is fear itself.",
+            "author": "Franklin D. Roosevelt",
+            "id": 81,
+            "char": 37,
+            "length": "short"
+        },
+        {
+            "text": "The unexamined life is not worth living.",
+            "author": "Socrates",
+            "id": 82,
+            "char": 34,
+            "length": "short"
+        },
+        {
+            "text": "Be the change that you wish to see in the world.",
+            "author": "Mahatma Gandhi",
+            "id": 83,
+            "char": 38,
+            "length": "short"
+        },
+        {
+            "text": "The mind is like a parachute. It doesn't work if it is not open.",
+            "author": "Frank Zappa",
+            "id": 84,
+            "char": 51,
+            "length": "short"
+        },
+        {
+            "text": "The successful warrior is the average man, with laser-like focus.",
+            "author": "Bruce Lee",
+            "id": 85,
+            "char": 56,
+            "length": "medium"
+        },
+        {
+            "text": "Those who dare to fail miserably can achieve greatly.",
+            "author": "John F. Kennedy",
+            "id": 86,
+            "char": 45,
+            "length": "short"
+        },
+        {
+            "text": "I've failed over and over and over again in my life and that is why I succeed.",
+            "author": "Michael Jordan",
+            "id": 87,
+            "char": 62,
+            "length": "medium"
+        },
+        {
+            "text": "You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
+            "author": "Dr. Seuss",
+            "id": 88,
+            "char": 85,
+            "length": "long"
+        },
+        {
+            "text": "If you tell the truth, you don't have to remember anything.",
+            "author": "Mark Twain",
+            "id": 89,
+            "char": 49,
+            "length": "short"
+        },
+        {
+            "text": "Friendship... is born at the moment when one man says to another \"What! You too? I thought that no one but myself...\"",
+            "author": "C.S. Lewis",
+            "id": 90,
+            "char": 96,
+            "length": "long"
+        },
+        {
+            "text": "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+            "author": "Helen Keller",
+            "id": 91,
+            "char": 92,
+            "length": "long"
+        },
+        {
+            "text": "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.",
+            "author": "Steve Jobs",
+            "id": 92,
+            "char": 88,
+            "length": "long"
+        },
+        {
+            "text": "The mind is everything. What you think, you become.",
+            "author": "Buddha",
+            "id": 93,
+            "char": 43,
+            "length": "short"
+        },
+        {
+            "text": "The only thing that stands between you and your dream is the will to try and the belief that it is actually possible.",
+            "author": "Joel Brown",
+            "id": 94,
+            "char": 95,
+            "length": "long"
+        },
+        {
+            "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+            "author": "Nelson Mandela",
+            "id": 95,
+            "char": 73,
+            "length": "medium"
+        },
+        {
+            "text": "The only thing that is impossible is the thing you don't try.",
+            "author": "George Bernard Shaw",
+            "id": 96,
+            "char": 50,
+            "length": "short"
+        },
+        {
+            "text": "The only way to achieve the impossible is to believe it is possible.",
+            "author": "Alice in Wonderland",
+            "id": 97,
+            "char": 56,
+            "length": "medium"
+        },
+        {
+            "text": "The only way to overcome fear is to face it head-on.",
+            "author": "Susan Jeffers",
+            "id": 98,
+            "char": 42,
+            "length": "short"
+        },
+        {
+            "text": "The only way to achieve success is to work hard and never give up.",
+            "author": "Unknown",
+            "id": 99,
+            "char": 53,
+            "length": "short"
+        },
+        {
+            "text": "The only way to be happy is to be content with what you have.",
+            "author": "Epicurus",
+            "id": 100,
+            "char": 48,
+            "length": "short"
+        },
+        {
+            "text": "The only way to make a difference in the world is to take action.",
+            "author": "Mahatma Gandhi",
+            "id": 101,
+            "char": 52,
+            "length": "short"
+        },
+        {
+            "text": "The only way to live a meaningful life is to follow your dreams.",
+            "author": "Jim Rohn",
+            "id": 102,
+            "char": 52,
+            "length": "short"
+        },
+        {
+            "text": "The only way to be successful is to be yourself.",
+            "author": "Beyonce",
+            "id": 103,
+            "char": 39,
+            "length": "short"
+        },
+        {
+            "text": "The only way to be happy is to be grateful.",
+            "author": "Melody Beattie",
+            "id": 104,
+            "char": 34,
+            "length": "short"
+        },
+        {
+            "text": "The only way to make the world a better place is to start with yourself.",
+            "author": "Malala Yousafzai",
+            "id": 105,
+            "char": 58,
+            "length": "medium"
+        },
+        {
+            "text": "The only way to achieve greatness is to never stop learning.",
+            "author": "Albert Einstein",
+            "id": 106,
+            "char": 50,
+            "length": "short"
+        },
+        {
+            "text": "The best way to find yourself is to lose yourself in the service of others.",
+            "author": "Mahatma Gandhi",
+            "id": 107,
+            "char": 61,
+            "length": "medium"
+        },
+        {
+            "text": "Happiness is not something ready made. It comes from your own actions.",
+            "author": "Dalai Lama",
+            "id": 108,
+            "char": 59,
+            "length": "medium"
+        },
+        {
+            "text": "If you can dream it, you can do it.",
+            "author": "Walt Disney",
+            "id": 109,
+            "char": 27,
+            "length": "short"
+        },
+        {
+            "text": "It's not how much you have, but how much you enjoy that makes happiness.",
+            "author": "Charles Spurgeon",
+            "id": 110,
+            "char": 59,
+            "length": "medium"
+        },
+        {
+            "text": "The greatest gift you can give is your time.",
+            "author": "Jim Rohn",
+            "id": 111,
+            "char": 36,
+            "length": "short"
+        },
+        {
+            "text": "The best way to make friends is to be one.",
+            "author": "Ralph Waldo Emerson",
+            "id": 112,
+            "char": 33,
+            "length": "short"
+        },
+        {
+            "text": "The more you learn, the more you earn.",
+            "author": "Benjamin Franklin",
+            "id": 113,
+            "char": 31,
+            "length": "short"
+        }
+    ]
+}
