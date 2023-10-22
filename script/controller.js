@@ -1,4 +1,6 @@
 import * as model from "./model.js";
+import Navigation from "./views/Navigation.js";
+import Stats from "./views/Stats.js";
 import Config from "./views/Config.js";
 import Input from "./views/Input.js";
 import WordsWrapper from "./views/WordsWrapper.js";
@@ -35,7 +37,7 @@ Config.addHandlerConfig(async (config) => {
 });
 
 Input.addHandlerInput(function (inputArr, inputType) {
-    if (!model.state.testStarted && inputArr[0]) {
+    if (!model.state.isTestStarted && inputArr[0]) {
         model.startTest();
 
         Caret.stopAnimation();
@@ -65,10 +67,19 @@ Input.addHandlerInput(function (inputArr, inputType) {
     }
 });
 
+Navigation.addHandlerStats(() => {
+    Stats.DisplayStats(model.state.stats, model.state.history);
+});
+
+// Navigation.addHandlerCustomize(() => {});
+
 History.addHistoryOptionHandler((btn) => {
     model.updateConfig({ historyOption: btn });
 
-    History.DisplayHistoryOption(model.state.history, model.state.testResult.words);
+    History.DisplayHistoryOption(
+        model.state.history,
+        model.state.testResult.words
+    );
 });
 
 Restart.addHandlerRestart(async (option) => {
@@ -94,7 +105,7 @@ Restart.addHandlerRestart(async (option) => {
 
     setCounter();
 
-    if (!model.state.testStarted) {
+    if (!model.state.isTestStarted) {
         Input.enableInput();
 
         Result.hideResult();
@@ -116,7 +127,10 @@ function endTestAndDisplayResult() {
 
     History.selectActiveOption(model.state.config.historyOption);
 
-    History.DisplayHistoryOption(model.state.history, model.state.testResult.words);
+    History.DisplayHistoryOption(
+        model.state.history,
+        model.state.testResult.words
+    );
 
     History.addHistoryDetailHandler((id) => {
         const item = model.state.history.find((val) => val.id == id);

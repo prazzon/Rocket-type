@@ -15,13 +15,13 @@
     <header class="navigation">
         <img src="/images/logo.png" alt="logo" class="logo">
         <ul class="nav-links">
-            <li class="nav-link">
+            <li class="nav-link" id="stats">
                 <svg class="nav-icon">
                     <use xlink:href="/images/sprite.svg#icon-leaderboard"></use>
                 </svg>
                 Stats
             </li>
-            <li class="nav-link">
+            <li class="nav-link" id="customize">
                 <svg class="nav-icon">
                     <use xlink:href="/images/sprite.svg#icon-customize"></use>
                 </svg>
@@ -246,6 +246,56 @@
         </div>
     </main>
     <div class="footer"></div>
+    <div class="modal hidden">
+        <div class="stats">
+            <div class="stats-title">
+                <svg class="nav-icon">
+                    <use xlink:href="/images/sprite.svg#icon-leaderboard"></use>
+                </svg>
+                Stats
+            </div>
+            <div class="stats-content-container">
+                <div class="stats-content">
+                    <div class="stats-content__title">Tests started</div>
+                    <div class="stats-content__value test-started">2491</div>
+                </div>
+                <div class="stats-content">
+                    <div class="stats-content__title">Tests completed</div>
+                    <div class="stats-content__value test-completed">3091</div>
+                </div>
+                <div class="stats-content">
+                    <div class="stats-content__title">time typing</div>
+                    <div class="stats-content__value time-typing">12:22:27</div>
+                </div>
+                <div class="stats-content">
+                    <div class="stats-content__title">highest wpm</div>
+                    <div class="stats-content__value highest-wpm">102</div>
+                </div>
+                <div class="stats-content">
+                    <div class="stats-content__title">average wpm</div>
+                    <div class="stats-content__value avg-wpm">102</div>
+                </div>
+                <div class="stats-content">
+                    <div class="stats-content__title">average wpm (last 10 tests)</div>
+                    <div class="stats-content__value avg-wpm-lt">132</div>
+                </div>
+                <div class="stats-content">
+                    <div class="stats-content__title">highest accuracy</div>
+                    <div class="stats-content__value highest-accuracy">100%</div>
+                </div>
+                <div class="stats-content">
+                    <div class="stats-content__title">average accuracy</div>
+                    <div class="stats-content__value avg-accuracy">80%</div>
+                </div>
+                <div class="stats-content">
+                    <div class="stats-content__title">average accuracy (last 10 tests)</div>
+                    <div class="stats-content__value avg-accuracy-lt">92%</div>
+                </div>
+            </div>
+        </div>
+        <button class="btn--close-modal">&times;</button>
+    </div>
+    <div class="overlay hidden"></div>
 </body>
 
 </html>

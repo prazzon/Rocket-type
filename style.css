@@ -724,6 +724,127 @@ a:active {
     transition: fill 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
+/***********/
+/** Modal **/
+/***********/
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* max-width: 60rem; */
+    background-color: #f3f3f3;
+    /* padding: 5rem 6rem; */
+    /* box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3); */
+    /* box-shadow: var(--background-shadow); */
+    z-index: 1000;
+    transition: all 0.5s;
+
+    transition: all 0.1s;
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    /* padding: 4rem; */
+    width: 100rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    transition: all 0.5s;
+    transition: all 0.1s;
+}
+
+.btn--close-modal {
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0.5rem;
+    top: 1rem;
+    right: 2rem;
+    right: 2.8rem;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.stats {
+    padding: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.stats-title {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.stats-title svg {
+    fill: var(--text-color);
+}
+
+.stats-content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 2rem;
+    /* gap: 1.5rem; */
+    border-radius: 1rem;
+}
+
+.stats-content {
+    background-color: var(--background-color-secondary);
+    border-radius: 1rem;
+    padding: 2rem;
+    padding: 1.5rem 2rem;
+}
+
+.stats-content__title {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.stats-content__value {
+    font-size: 1.8rem;
+    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.stats-view-history-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* text-align: center; */
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    cursor: pointer;
+    background-color: var(--background-color-secondary);
+    padding: .5rem 1rem;
+    border-radius: .8rem;
+}
+
+.stats-view-history-btn svg {
+    fill: var(--text-color);
+}
+
 /***************/
 /** Animation **/
 /***************/

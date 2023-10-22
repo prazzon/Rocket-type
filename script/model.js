@@ -7,7 +7,12 @@ export const state = {
         type: 10,
         historyOption: "recent",
     },
-    testStarted: false,
+    stats: {
+        testStarted: 0,
+        testCompleted: 0,
+        timeTyping: 0
+    },
+    isTestStarted: false,
     time: {},
     testResult: {},
     history: [],
@@ -18,9 +23,13 @@ const init = function () {
 
     const config = localStorage.getItem("config");
 
+    const stats = localStorage.getItem("stats");
+
     if (history) state.history = JSON.parse(history);
 
     if (config) state.config = JSON.parse(config);
+
+    if (stats) state.stats = JSON.parse(stats);
 };
 init();
 
@@ -41,25 +50,29 @@ export const loadText = async function () {
 export function resetTest() {
     state.time = {};
     state.testResult = {};
-    state.testStarted = false;
+    state.isTestStarted = false;
 }
 
 export function startTest() {
-    state.testStarted = true;
+    state.isTestStarted = true;
     state.time.timeStarted = Date.now();
+    state.stats.testStarted++;
 }
 
 export function endTest() {
-    state.testStarted = false;
+    state.isTestStarted = false;
     state.time.timeStopped = Date.now();
     state.time.timeElapsed = state.time.timeStopped - state.time.timeStarted;
+    state.stats.timeTyping += state.time.timeElapsed;
+    state.stats.testCompleted++;
 }
 
 export function updateResult(result) {
     const wpm = result.correctLetters / 5 / (state.time.timeElapsed / 60000);
     const raw = result.letterCount / 5 / (state.time.timeElapsed / 60000);
     const acc =
-        (result.correctLetters / (result.correctLetters + result.errorCount)) * 100;
+        (result.correctLetters / (result.correctLetters + result.errorCount)) *
+        100;
     const time = state.time.timeElapsed / 1000;
 
     state.testResult = {
@@ -76,4 +89,6 @@ export function updateResult(result) {
     state.history.unshift(state.testResult);
 
     localStorage.setItem("history", JSON.stringify(state.history));
+
+    localStorage.setItem("stats", JSON.stringify(state.stats));
 }
