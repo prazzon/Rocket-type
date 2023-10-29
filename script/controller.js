@@ -1,5 +1,5 @@
 import * as model from "./model.js";
-import Navigation from "./views/Navigation.js";
+import Modal from "./views/Modal.js";
 import Stats from "./views/Stats.js";
 import Config from "./views/Config.js";
 import Input from "./views/Input.js";
@@ -67,11 +67,11 @@ Input.addHandlerInput(function (inputArr, inputType) {
     }
 });
 
-Navigation.addHandlerStats(() => {
-    Stats.DisplayStats(model.state.stats, model.state.history);
-});
+Stats.addHandlerStatBtn(() => {
+    Modal.showModal();
 
-// Navigation.addHandlerCustomize(() => {});
+    Stats.renderStats(model.state.stats, model.state.history);
+});
 
 History.addHistoryOptionHandler((btn) => {
     model.updateConfig({ historyOption: btn });

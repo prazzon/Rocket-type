@@ -558,7 +558,6 @@ a:active {
     font-size: 1.6rem;
     font-weight: 800;
     color: var(--text-color);
-    /* color: var(--primary-color); */
 }
 
 /** History Wrapper **/
@@ -570,7 +569,6 @@ a:active {
     padding: .5rem;
     border-radius: 1rem;
     border: 1.5px solid var(--background-color);
-    margin-left: 3rem;
 }
 
 .history-option {
@@ -605,13 +603,12 @@ a:active {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     padding: 1.2rem 0;
-    border-radius: 1rem;
+    border-radius: .7rem;
     transition: all .2s ease;
 }
 
 .history-detail:hover {
     background: var(--background-color);
-    transform: scale(1.01);
     cursor: pointer;
 }
 
@@ -646,6 +643,61 @@ a:active {
     padding-left: 3rem;
     height: 22rem;
     overflow: auto;
+}
+
+.recent-container {
+    background-color: var(--background-color-secondary);
+    margin-top: 1rem;
+    padding: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    height: 30rem;
+    height: 35rem;
+    overflow-y: auto;
+    height: 0;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.recent-container.active {
+    height: 35rem;
+    opacity: 1;
+}
+
+.recent-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    height: 3rem;
+}
+
+.recent-table th,
+.recent-table td {
+    text-align: center;
+    text-align: start;
+    padding: 1rem;
+    border-bottom: 2px solid var(--background-color);
+    width: 20rem;
+}
+
+.recent-table th {
+    font-size: 1.2rem;
+}
+
+.recent-table tr td:last-child {
+    width: 30rem;
+    width: 40rem;
+}
+
+.recent-table td {
+    font-size: 1.6rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+
+    /* vertical-align: bottom; */
+    padding: 2.5rem 1rem;
+    /* padding: 2rem 1rem; */
 }
 
 /************/
@@ -747,6 +799,11 @@ a:active {
     width: 100rem;
 }
 
+.modal-content {
+    padding: 3rem;
+    /* padding-bottom: 2.5rem; */
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -764,14 +821,18 @@ a:active {
     font-family: inherit;
     color: inherit;
     position: absolute;
-    top: 0.5rem;
-    top: 1rem;
-    right: 2rem;
-    right: 2.8rem;
+    top: 2rem;
+    right: 3rem;
     font-size: 4rem;
+    line-height: 2.5rem;
     cursor: pointer;
     border: none;
     background: none;
+    transition: all 0.1s ease-in-out
+}
+
+.btn--close-modal:hover {
+    color: var(--text-color);
 }
 
 .hidden {
@@ -780,8 +841,12 @@ a:active {
 }
 
 .stats {
-    padding: 3rem;
-    padding-bottom: 2.5rem;
+    height: 37.5rem;
+    transition: height .3s ease;
+}
+
+.stats.expand {
+    height: 73.5rem;
 }
 
 .stats-title {
@@ -825,7 +890,7 @@ a:active {
     color: var(--text-color);
 }
 
-.stats-view-history-btn {
+.view-history-btn {
     display: flex;
     justify-content: center;
     align-items: center;

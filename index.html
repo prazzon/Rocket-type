@@ -15,7 +15,7 @@
     <header class="navigation">
         <img src="/images/logo.png" alt="logo" class="logo">
         <ul class="nav-links">
-            <li class="nav-link" id="stats">
+            <li class="nav-link" id="stats-btn">
                 <svg class="nav-icon">
                     <use xlink:href="/images/sprite.svg#icon-leaderboard"></use>
                 </svg>
@@ -152,6 +152,10 @@
                             <div class="history-option active" data-option="recent">Recent</div>
                             <div class="history-option" data-option="best">Best</div>
                             <div class="history-option" data-option="inputHistory">Input history</div>
+                            <!-- <div class="history-option" data-option="inputHistory">Words</div> -->
+                            <!-- <div class="history-option" data-option="inputHistory">Time</div> -->
+                            <!-- <div class="history-option" data-option="inputHistory">Quotes</div> -->
+                            <!-- <div class="history-option" data-option="inputHistory">Input history</div> -->
                         </div>
                         <div class="history-container">
                             <div class="history-detail">
@@ -246,55 +250,123 @@
         </div>
     </main>
     <div class="footer"></div>
-    <div class="modal hidden">
-        <div class="stats">
-            <div class="stats-title">
-                <svg class="nav-icon">
-                    <use xlink:href="/images/sprite.svg#icon-leaderboard"></use>
-                </svg>
-                Stats
-            </div>
-            <div class="stats-content-container">
-                <div class="stats-content">
-                    <div class="stats-content__title">Tests started</div>
-                    <div class="stats-content__value test-started">2491</div>
+    <!-- <div class="modal"> -->
+        <div class="modal hidden">
+        <div class="modal-content">
+            <div class="stats">
+                <div class="stats-title">
+                    <svg class="nav-icon">
+                        <use xlink:href="/images/sprite.svg#icon-leaderboard"></use>
+                    </svg>
+                    Stats
                 </div>
-                <div class="stats-content">
-                    <div class="stats-content__title">Tests completed</div>
-                    <div class="stats-content__value test-completed">3091</div>
+                <div class="stats-content-container">
+                    <div class="stats-content">
+                        <div class="stats-content__title">Tests started</div>
+                        <div class="stats-content__value test-started">2491</div>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-content__title">Tests completed</div>
+                        <div class="stats-content__value test-completed">3091</div>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-content__title">time typing</div>
+                        <div class="stats-content__value time-typing">12:22:27</div>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-content__title">highest wpm</div>
+                        <div class="stats-content__value highest-wpm">102</div>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-content__title">average wpm</div>
+                        <div class="stats-content__value avg-wpm">102</div>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-content__title">average wpm (last 10 tests)</div>
+                        <div class="stats-content__value avg-wpm-lt">132</div>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-content__title">highest accuracy</div>
+                        <div class="stats-content__value highest-accuracy">100%</div>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-content__title">average accuracy</div>
+                        <div class="stats-content__value avg-accuracy">80%</div>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-content__title">average accuracy (last 10 tests)</div>
+                        <div class="stats-content__value avg-accuracy-lt">92%</div>
+                    </div>
                 </div>
-                <div class="stats-content">
-                    <div class="stats-content__title">time typing</div>
-                    <div class="stats-content__value time-typing">12:22:27</div>
+                <div class="view-history-btn">Toggle History
+                    <svg class="nav-icon">
+                        <use xlink:href="/images/symbol-defs.svg#icon-caret-down"></use>
+                    </svg>
                 </div>
-                <div class="stats-content">
-                    <div class="stats-content__title">highest wpm</div>
-                    <div class="stats-content__value highest-wpm">102</div>
-                </div>
-                <div class="stats-content">
-                    <div class="stats-content__title">average wpm</div>
-                    <div class="stats-content__value avg-wpm">102</div>
-                </div>
-                <div class="stats-content">
-                    <div class="stats-content__title">average wpm (last 10 tests)</div>
-                    <div class="stats-content__value avg-wpm-lt">132</div>
-                </div>
-                <div class="stats-content">
-                    <div class="stats-content__title">highest accuracy</div>
-                    <div class="stats-content__value highest-accuracy">100%</div>
-                </div>
-                <div class="stats-content">
-                    <div class="stats-content__title">average accuracy</div>
-                    <div class="stats-content__value avg-accuracy">80%</div>
-                </div>
-                <div class="stats-content">
-                    <div class="stats-content__title">average accuracy (last 10 tests)</div>
-                    <div class="stats-content__value avg-accuracy-lt">92%</div>
+                <div class="recent-container">
+                    <table class="recent-table">
+                        <tr class="table-head">
+                            <th>wpm</th>
+                            <th>accuracy %</th>
+                            <th>mode</th>
+                            <th>type</th>
+                            <th>chars</th>
+                            <th>date</th>
+                        </tr>
+                        <tr class="table-data">
+                            <td>88.23</td>
+                            <td>99.00%</td>
+                            <td>time</td>
+                            <td>15</td>
+                            <td>40/0/1/0</td>
+                            <td>16 Oct 2023 21:59</td>
+                        <tr class="table-data">
+                            <td>70.54</td>
+                            <td>80.20%</td>
+                            <td>quote</td>
+                            <td>long</td>
+                            <td>30/0/0/8</td>
+                            <td>16 Oct 2023 21:53</td>
+                        </tr>
+                        <tr class="table-data">
+                            <td>55.00</td>
+                            <td>100.00%</td>
+                            <td>words</td>
+                            <td>10</td>
+                            <td>10/0/0/0</td>
+                            <td>16 Oct 2023 21:20</td>
+                        </tr>
+                        <tr class="table-data">
+                            <td>120.89</td>
+                            <td>98.00%</td>
+                            <td>time</td>
+                            <td>30</td>
+                            <td>78/0/3/0</td>
+                            <td>14 Oct 2023 01:59</td>
+                        </tr>
+                        <tr class="table-data">
+                            <td>120.89</td>
+                            <td>98.00%</td>
+                            <td>time</td>
+                            <td>30</td>
+                            <td>78/0/3/0</td>
+                            <td>14 Oct 2023 01:59</td>
+                        </tr>
+                        <tr class="table-data">
+                            <td>120.89</td>
+                            <td>98.00%</td>
+                            <td>time</td>
+                            <td>30</td>
+                            <td>78/0/3/0</td>
+                            <td>14 Oct 2023 01:59</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
         <button class="btn--close-modal">&times;</button>
     </div>
+    <!-- <div class="overlay"></div> -->
     <div class="overlay hidden"></div>
 </body>
 
