@@ -13,7 +13,7 @@
     --background-color-secondary: #030304;
     --background-color-secondary: rgba(5, 5, 7, 0.9);
     --background-color-secondary: rgba(5, 5, 7, 0.7);
-
+    
     --background-shadow: rgba(0, 0, 0, 0.35) 0px 3px 3px;
     --background-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 
@@ -394,8 +394,7 @@ a:active {
     height: 2.8rem;
     border-radius: 2px;
     background-color: var(--primary-color);
-    transition: all 0.1s ease;
-    height: 2.4rem;
+    transition: all 0.1s;
     margin-top: .2rem;
     z-index: 10;
 }
@@ -743,6 +742,10 @@ a:active {
     transition: color 0.2s ease-in-out;
 }
 
+.restart-btn.hidden {
+    display: none;
+}
+
 .restart-btn:hover {
     color: var(--text-color);
 }
@@ -835,7 +838,8 @@ a:active {
     color: var(--text-color);
 }
 
-.hidden {
+.modal.hidden,
+.overlay.hidden {
     visibility: hidden;
     opacity: 0;
 }

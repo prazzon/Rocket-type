@@ -165,8 +165,8 @@ class Stats extends View {
                     <td>${history.acc.toFixed(2)} %</th>
                     <td>${history.mode}</th>
                     <td>${history.type}</th>
-                    <td>${history.correctLetters}/${history.incorrectLetters}/
-                    ${history.extraLetters}/${history.missedLetters}</th>
+                    <td>${history.correctLetters}/${history.incorrectLetters}/${
+                    history.extraLetters}/${history.missedLetters}</th>
                     <td>${this._formatDate(history.timeElapse.timeStopped)}</th>
                 </tr>
             `;

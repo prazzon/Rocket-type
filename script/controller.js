@@ -83,7 +83,9 @@ History.addHistoryOptionHandler((btn) => {
 });
 
 Restart.addHandlerRestart(async (option) => {
-    option === "next" && (await model.loadText());
+    option !== "restart" && (await model.loadText());
+
+    Restart.hideRestartBtn();
 
     WordsWrapper.renderText(model.state.words);
 
@@ -124,6 +126,8 @@ function endTestAndDisplayResult() {
     model.updateResult(WordsWrapper.getResults());
 
     Result.showResult(model.state.testResult);
+
+    Restart.showRestartBtn();
 
     History.selectActiveOption(model.state.config.historyOption);
 
