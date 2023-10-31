@@ -46,11 +46,11 @@ class History extends View {
 
         if (active === "inputHistory") return this._updateContainer(words);
 
-        if (active === "recent") return this._renderHistory(history.slice(0, 4));
+        if (active === "recent") return this._renderHistory(history.slice(0, 20));
 
         const sorted = [...history].sort((a, b) => b.wpm - a.wpm);
 
-        this._renderHistory(sorted.slice(0, 4));
+        this._renderHistory(sorted.slice(0, 20));
     }
 
     get _activeOption() {

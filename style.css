@@ -26,8 +26,7 @@
 
 ::-webkit-scrollbar {
     width: 0.8rem;
-    width: 1.5rem;
-    height: 0.8rem;
+    width: 1.2rem;
     background-color: transparent;
 }
 
@@ -36,17 +35,16 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    width: 2px;
-    height: 2px;
     border-radius: 2rem;
     background-color: var(--primary-color);
-    background-color: var(--background-color);
-    border: 1.7px solid var(--tertiary-color);
+    border: 1.7px solid #0b0a0e;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--tertiary-color);
+    background-color: var(--background-color);
     border-radius: 2rem;
+    margin-top: 1rem;
+    border: 1.7px solid var(--background-color-secondary);
 }
 
 *,
@@ -594,7 +592,8 @@ a:active {
     justify-content: flex-start;
     gap: 0rem;
     padding-top: .5rem;
-    height: 22rem;
+    height: 24rem;
+    overflow: auto;
 }
 
 .history-detail {
@@ -602,6 +601,7 @@ a:active {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     padding: 1.2rem 0;
+    margin-right: .5rem;
     border-radius: .7rem;
     transition: all .2s ease;
 }
