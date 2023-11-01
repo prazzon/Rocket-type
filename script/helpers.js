@@ -29,7 +29,7 @@ export const getText = async function (mode, type) {
 
             const words = [...data.words]
                 .sort(() => 0.5 - Math.random())
-                .slice(0, 100);
+                .slice(0, 1000);
 
             return words;
         }
