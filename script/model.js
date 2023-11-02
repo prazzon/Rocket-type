@@ -10,7 +10,7 @@ export const state = {
     stats: {
         testStarted: 0,
         testCompleted: 0,
-        timeTyping: 0
+        timeTyping: 0,
     },
     isTestStarted: false,
     time: {},
@@ -68,12 +68,14 @@ export function endTest() {
 }
 
 export function updateResult(result) {
-    const wpm = result.correctLetters / 5 / (state.time.timeElapsed / 60000);
-    const raw = result.letterCount / 5 / (state.time.timeElapsed / 60000);
-    const acc =
-        (result.correctLetters / (result.correctLetters + result.errorCount)) *
-        100;
-    const time = state.time.timeElapsed / 1000;
+    const timeInMinutes = state.time.timeElapsed / 60000;
+    const totalWordCount = result.correctLetters + result.errorCount; // including corrected errors
+    const correctLetterCount = result.correctLetters + result.wordCount - 1; // including spaces
+
+    const wpm = correctLetterCount / 5 / timeInMinutes;
+    const raw = result.letterCount / 5 / timeInMinutes;
+    const acc = result.correctLetters / totalWordCount * 100;
+    const time = state.time.timeElapsed / 1000; // in seconds
 
     state.testResult = {
         wpm,
