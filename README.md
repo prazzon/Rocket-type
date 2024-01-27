@@ -17,7 +17,7 @@ Welcome to Clunk, a sleek and intuitive web application designed for typing enth
    Clunk offers a range of modes to suit every typist's preference, including:
    - Timed challenges
    - Random word sequences
-   - Quotes text inputs
+   - Quotes challenges
 
 2. **Progress Tracking:**
    The application saves your typing history, providing valuable insights into your improvement over time. Track your performance and celebrate your achievements.
