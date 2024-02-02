@@ -30,7 +30,7 @@ Welcome to Rocket type, a sleek and intuitive web application designed for typin
 
 ## Live Demo
 
-Check out the live demo of Rocket type: [Rocket type Demo](https://rocket-type.netlify.app)
+Check out the live demo of Rocket type: [Demo](https://rocket-type.netlify.app)
 
 ## Technical Stack
 
