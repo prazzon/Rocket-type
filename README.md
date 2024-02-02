@@ -26,7 +26,7 @@ Welcome to Rocket type, a sleek and intuitive web application designed for typin
    Rocket type is crafted with a user-friendly interface, ensuring an enjoyable typing experience. Focus on improving your typing skills without any distractions.
 
 4. **Responsive and Accessible:**
-   Rocket type is designed to be responsive, making it accessible across various devices. Whether you're on a desktop, tablet, or smartphone, Clunk adapts to your screen size.
+   Rocket type is designed to be responsive, making it accessible across various devices. Whether you're on a desktop, tablet, or smartphone, Rocket type adapts to your screen size.
 
 ## Live Demo
 
@@ -57,6 +57,6 @@ Rocket type is licensed under the [MIT License](LICENSE). Feel free to use, modi
 
 ## Feedback and Support
 
-If you have any feedback, suggestions, or issues, please [open an issue](https://github.com/yourusername/rocket-type/issues). We appreciate your input and aim to make Clunk a valuable tool for typing enthusiasts.
+If you have any feedback, suggestions, or issues, please [open an issue](https://github.com/yourusername/rocket-type/issues). We appreciate your input and aim to make Rocket type a valuable tool for typing enthusiasts.
 
 Happy typing with Rocket type! 🚀
