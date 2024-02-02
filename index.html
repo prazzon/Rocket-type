@@ -4,29 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/resources/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <script defer type="module" src="./script/controller.js"></script>
-    <title>Clunk</title>
+    <script defer type="module" src="./resources/js/controller.js"></script>
+    <title>Rocket type</title>
 </head>
 
 <body>
     <header class="navigation">
-        <img src="/images/logo.png" alt="logo" class="logo">
+        <div class="logo">
+           <img src="./resources/images/logo.png" alt="logo" class="logo-img">
+           <p class="logo-text">Rocket type</p>
+        </div>
         <ul class="nav-links">
             <li class="nav-link" id="stats-btn">
                 <svg class="nav-icon">
-                    <use xlink:href="/images/sprite.svg#icon-leaderboard"></use>
+                    <use xlink:href="./resources/images/sprite.svg#icon-leaderboard"></use>
                 </svg>
                 Stats
             </li>
-            <li class="nav-link" id="customize">
+            <!-- <li class="nav-link" id="customize">
                 <svg class="nav-icon">
-                    <use xlink:href="/images/sprite.svg#icon-customize"></use>
+                    <use xlink:href="./resources/images/sprite.svg#icon-customize"></use>
                 </svg>
                 Customize
-            </li>
+            </li> -->
         </ul>
     </header>
     <main class="main">
@@ -39,19 +42,19 @@
                     <div class="mode-container">
                         <div class="mode-button active" data-mode="words">
                             <svg class="mode-icon">
-                                <use xlink:href="/images/sprite.svg#icon-word-2"></use>
+                                <use xlink:href="./resources/images/sprite.svg#icon-word-2"></use>
                             </svg>
                             <div class="mode-text">words</div>
                         </div>
                         <div class="mode-button" data-mode="time">
                             <svg class="mode-icon">
-                                <use xlink:href="/images/sprite.svg#icon-time"></use>
+                                <use xlink:href="./resources/images/sprite.svg#icon-time"></use>
                             </svg>
                             <div class="mode-text">time</div>
                         </div>
                         <div class="mode-button" data-mode="quote">
                             <svg class="mode-icon">
-                                <use xlink:href="/images/sprite.svg#icon-quote"></use>
+                                <use xlink:href="./resources/images/sprite.svg#icon-quote"></use>
                             </svg>
                             <div class="mode-text">quote</div>
                         </div>
@@ -237,19 +240,19 @@
         <div class="restart-container">
             <button class="start-again restart-btn" data-option="start-again">
                 <svg class="restart-icon">
-                    <use xlink:href="/images/sprite.svg#icon-restart"></use>
+                    <use xlink:href="./resources/images/sprite.svg#icon-restart"></use>
                 </svg>
                 Start Over
             </button>
             <button class="restart restart-btn hidden" data-option="restart">
                 <svg class="restart-icon">
-                    <use xlink:href="/images/sprite.svg#icon-restart"></use>
+                    <use xlink:href="./resources/images/sprite.svg#icon-restart"></use>
                 </svg>
                 Restart
             </button>
             <button class="next-test restart-btn hidden" data-option="next">
                 <svg class="restart-icon">
-                    <use xlink:href="/images/sprite.svg#icon-next"></use>
+                    <use xlink:href="./resources/images/sprite.svg#icon-next"></use>
                 </svg>
                 Next Test
             </button>
@@ -262,7 +265,7 @@
             <div class="stats">
                 <div class="stats-title">
                     <svg class="nav-icon">
-                        <use xlink:href="/images/sprite.svg#icon-leaderboard"></use>
+                        <use xlink:href="./resources/images/sprite.svg#icon-leaderboard"></use>
                     </svg>
                     Stats
                 </div>
@@ -306,7 +309,7 @@
                 </div>
                 <div class="view-history-btn">Toggle History
                     <svg class="nav-icon">
-                        <use xlink:href="/images/symbol-defs.svg#icon-caret-down"></use>
+                        <use xlink:href="./resources/images/symbol-defs.svg#icon-caret-down"></use>
                     </svg>
                 </div>
                 <div class="recent-container">
