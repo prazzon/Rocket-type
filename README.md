@@ -1,4 +1,4 @@
-# Rocket type - Typing Enthusiast's Playground
+# Rocket type
 
 Welcome to Rocket type, a sleek and intuitive web application designed for typing enthusiasts who want to hone their skills and track their progress effortlessly.
 
