@@ -15,9 +15,9 @@ Rocket type is a sleek and intuitive web application designed for typing enthusi
 
 1. **Diverse Typing Modes:**
    Rocket type offers a range of modes to suit every typist's preference, including:
-   - Timed challenges
-   - Random word sequences
-   - Quotes challenges
+   - Timed challenges,
+   - Random word sequences,
+   - Quotes challenges, and more
 
 2. **Progress Tracking:**
    The application saves your typing history, providing valuable insights into your improvement over time. Track your performance and celebrate your achievements.
