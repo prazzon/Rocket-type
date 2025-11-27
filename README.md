@@ -1,6 +1,6 @@
 # Rocket Type
 
-Rocket type - a sleek and intuitive web application designed for typing enthusiasts who want to hone their skills and track their progress effortlessly.
+Rocket type is a sleek and intuitive web application designed for typing enthusiasts who want to hone their skills and track their progress effortlessly.
 
 ## Table of Contents
 - [Features](#features)
